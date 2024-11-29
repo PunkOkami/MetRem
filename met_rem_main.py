@@ -15,7 +15,7 @@ paths = args.input_dir
 clean_files_path = Path('Clean_files')
 clean_files_path.mkdir(exist_ok=True)
 
-pbar = tqdm(total=len(paths), desc='Cleaning metadata: ', ascii=True, gui=True)
+pbar = tqdm(total=len(paths), desc='Cleaning metadata: ', ascii=True)
 for path in paths:
 	image = exif.Image(path)
 	if not image.has_exif:
