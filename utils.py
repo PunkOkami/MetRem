@@ -11,6 +11,10 @@ def dir_to_paths(dir_path: str) -> list[Path]:
 	"""
 	
 	raw_files_dir_path = Path(dir_path)
+	print(dir_path)
+	if not raw_files_dir_path.exists():
+		print('Input dir does not exist')
+		exit(8)
 	raw_files_list = list(raw_files_dir_path.rglob('*.jpg'))
 	raw_files_list.extend(list(raw_files_dir_path.rglob('*.png')))
 	raw_files_list.extend(list(raw_files_dir_path.rglob('*.tiff')))
