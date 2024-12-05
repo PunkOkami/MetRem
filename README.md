@@ -1,8 +1,8 @@
-# MetRem - Image and video metadata removing tool
+# MetRem - Image metadata removing tool
 
 This is not a complex tool that I put together for personal use. Yes, I could have used some existing tools, but I wanted
 to check some tags and read it, so I threw together a simple script. I then added some command line interface and decided
-that the code is close to being a tool. So I did. Deal with it.
+that the code is close to being a tool. So I published it. Deal with it.
 
 ## Requirements
 Python packages needed:

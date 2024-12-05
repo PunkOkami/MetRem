@@ -11,7 +11,6 @@ def dir_to_paths(dir_path: str) -> list[Path]:
 	"""
 	
 	raw_files_dir_path = Path(dir_path)
-	print(dir_path)
 	if not raw_files_dir_path.exists():
 		print('Input dir does not exist')
 		exit(8)
